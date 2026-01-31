@@ -1,0 +1,17 @@
+# Eclipse / STS
+.metadata/
+.recommenders/
+.settings/
+.classpath
+.project
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+target/
+bin/
+
+# Logs
+*.log
