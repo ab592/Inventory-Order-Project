@@ -1,3 +1,0 @@
-[submodule "inventory-service"]
-	path = inventory-service
-	url = https://github.com/ab592/Inventory-Order-Project.git
