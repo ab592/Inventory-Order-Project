@@ -196,4 +196,4 @@ mvn spring-boot:run
 
 ## Conclusion
 
-This project fulfills all requirements specified in the Körber technical assignment, focusing on correctness, clarity, extensibility, and ease of setup.
+This project fulfills all requirements specified in the assignment, focusing on correctness, clarity, extensibility, and ease of setup.
