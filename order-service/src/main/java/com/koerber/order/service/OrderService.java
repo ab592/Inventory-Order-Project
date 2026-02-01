@@ -4,10 +4,11 @@ import java.util.List;
 
 import com.koerber.order.model.AllocatedBatchDto;
 import com.koerber.order.model.OrderRequest;
+import com.koerber.order.model.OrderResponseDto;
 
 public interface OrderService {
 	
 	List<AllocatedBatchDto> allocate(Long productId, int quantity);
 	
-	 List<AllocatedBatchDto> placeOrder(OrderRequest request);
+	OrderResponseDto placeOrder(OrderRequest request);
 }

@@ -2,7 +2,10 @@ package com.koerber.inventory.controller;
 
 import com.koerber.inventory.DTO.InventoryResponseDto;
 import com.koerber.inventory.model.InventoryBatch;
+import com.koerber.inventory.model.InventoryUpdateRequest;
 import com.koerber.inventory.service.InventoryService;
+
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -20,5 +23,11 @@ public class InventoryController {
     @GetMapping("/{productId}")
     public List<InventoryResponseDto> getInventory(@PathVariable Long productId) {
         return inventoryService.getInventoryByProduct(productId);
+    }
+    
+    @PostMapping("/update")
+    public ResponseEntity<String> updateInventory(@RequestBody InventoryUpdateRequest request) {
+    	inventoryService.updateInventory(request);
+        return ResponseEntity.ok("Inventory updated successfully");
     }
 }

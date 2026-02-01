@@ -1,7 +1,0 @@
-<changeSet id="2" author="koerber">
-    <loadData
-      file="db/data/orders.csv"
-      tableName="orders"
-      separator=","
-      quotchar="&quot;"/>
-</changeSet>
